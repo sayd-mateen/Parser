@@ -103,11 +103,12 @@ public class Parser {
 		opratr();
 		oprnd();
 		match(')');
+
 	}
 
 	private static void ifstmt(){
 		match('I');
-		//Test 
+		//Test
 		comprsn();
 		match('@');
 		while(token() == 'X' || token() == 'Y' || token() == 'Z' || token() == 'I' || token() == 'F' || token() == 'N' || token() == 'O' || token() == '%'){
